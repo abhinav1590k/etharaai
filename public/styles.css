@@ -1,21 +1,21 @@
 :root {
   color-scheme: light;
-  --bg: #f6f7f3;
+  --bg: #eef2f7;
   --surface: #ffffff;
-  --surface-strong: #fdfdfb;
-  --text: #1f2933;
-  --muted: #657282;
-  --line: #d9ded7;
-  --primary: #236a5b;
-  --primary-dark: #184d43;
-  --blue: #2f5f98;
-  --amber: #a85d18;
-  --red: #b23b3b;
-  --green-soft: #e4f2ed;
-  --blue-soft: #e6eef8;
-  --amber-soft: #fff1d9;
-  --red-soft: #fbe5e4;
-  --shadow: 0 14px 36px rgba(31, 41, 51, 0.08);
+  --surface-strong: #f8fbff;
+  --text: #172033;
+  --muted: #66758a;
+  --line: #d7deea;
+  --primary: #335cbb;
+  --primary-dark: #254795;
+  --blue: #0e7490;
+  --amber: #a96012;
+  --red: #b73552;
+  --green-soft: #e7f7ed;
+  --blue-soft: #e9f2ff;
+  --amber-soft: #fff3dd;
+  --red-soft: #fde8ee;
+  --shadow: 0 18px 42px rgba(23, 32, 51, 0.1);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -26,7 +26,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background: linear-gradient(180deg, #f8fafc 0%, var(--bg) 42%, #f5f7fb 100%);
   color: var(--text);
 }
 
@@ -56,7 +56,7 @@ button:disabled {
   min-height: 100vh;
   display: grid;
   grid-template-columns: minmax(320px, 0.9fr) minmax(380px, 1.1fr);
-  background: var(--surface);
+  background: #f8fafc;
 }
 
 .auth-intro {
@@ -65,7 +65,7 @@ button:disabled {
   flex-direction: column;
   justify-content: space-between;
   background:
-    linear-gradient(135deg, rgba(35, 106, 91, 0.9), rgba(47, 95, 152, 0.88)),
+    linear-gradient(145deg, rgba(51, 92, 187, 0.94), rgba(14, 116, 144, 0.9) 58%, rgba(38, 133, 96, 0.9)),
     url("data:image/svg+xml,%3Csvg width='900' height='900' viewBox='0 0 900 900' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.20)' stroke-width='2'%3E%3Cpath d='M110 150h680M110 300h680M110 450h680M110 600h680M110 750h680M150 110v680M300 110v680M450 110v680M600 110v680M750 110v680'/%3E%3C/g%3E%3Cg fill='rgba(255,255,255,0.22)'%3E%3Crect x='145' y='135' width='210' height='58' rx='8'/%3E%3Crect x='390' y='285' width='330' height='58' rx='8'/%3E%3Crect x='170' y='437' width='260' height='58' rx='8'/%3E%3Crect x='520' y='588' width='230' height='58' rx='8'/%3E%3Ccircle cx='690' cy='165' r='22'/%3E%3Ccircle cx='230' cy='620' r='22'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   color: #fff;
@@ -81,9 +81,10 @@ button:disabled {
   display: grid;
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 8px;
+  border-radius: 6px;
   margin-bottom: 22px;
   font-weight: 800;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .auth-intro h1 {
@@ -110,9 +111,10 @@ button:disabled {
 
 .auth-metric {
   border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 16px;
   backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .auth-metric strong {
@@ -136,9 +138,9 @@ button:disabled {
   width: min(460px, 100%);
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: var(--shadow);
-  padding: 28px;
+  padding: 30px;
 }
 
 .auth-panel h2 {
@@ -156,8 +158,8 @@ button:disabled {
   gap: 6px;
   padding: 4px;
   border: 1px solid var(--line);
-  background: #f4f6f2;
-  border-radius: 8px;
+  background: #eef3fa;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 
@@ -165,7 +167,7 @@ button:disabled {
   border: 0;
   background: transparent;
   color: var(--muted);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 10px 12px;
   font-weight: 700;
 }
@@ -197,8 +199,8 @@ button:disabled {
 .field textarea {
   width: 100%;
   min-width: 0;
-  border: 1px solid #cfd7ce;
-  border-radius: 8px;
+  border: 1px solid #cfd8e5;
+  border-radius: 6px;
   background: var(--surface-strong);
   color: var(--text);
   padding: 11px 12px;
@@ -214,12 +216,12 @@ button:disabled {
 .field select:focus,
 .field textarea:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(35, 106, 91, 0.14);
+  box-shadow: 0 0 0 3px rgba(51, 92, 187, 0.14);
 }
 
 .button {
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 10px 14px;
   min-height: 42px;
   display: inline-flex;
@@ -234,6 +236,7 @@ button:disabled {
 .button.primary {
   background: var(--primary);
   color: #fff;
+  box-shadow: 0 10px 18px rgba(51, 92, 187, 0.18);
 }
 
 .button.primary:hover {
@@ -242,13 +245,13 @@ button:disabled {
 
 .button.secondary {
   border-color: var(--line);
-  background: #f8faf6;
+  background: #f8fafc;
 }
 
 .button.danger {
   color: var(--red);
-  border-color: #efc3bf;
-  background: #fff8f7;
+  border-color: #f0bac7;
+  background: #fff7fa;
 }
 
 .button.icon {
@@ -266,7 +269,7 @@ button:disabled {
 
 .topbar {
   min-height: 70px;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--line);
   padding: 0 24px;
   display: flex;
@@ -276,6 +279,7 @@ button:disabled {
   position: sticky;
   top: 0;
   z-index: 5;
+  backdrop-filter: blur(14px);
 }
 
 .topbar-left {
@@ -310,10 +314,10 @@ button:disabled {
 .avatar {
   width: 38px;
   height: 38px;
-  border-radius: 8px;
+  border-radius: 6px;
   display: grid;
   place-items: center;
-  background: var(--green-soft);
+  background: var(--blue-soft);
   color: var(--primary-dark);
   font-weight: 900;
 }
@@ -326,7 +330,7 @@ button:disabled {
 
 .sidebar {
   border-right: 1px solid var(--line);
-  background: #fbfcf8;
+  background: #f8fafc;
   padding: 22px;
   overflow: auto;
 }
@@ -374,7 +378,7 @@ button:disabled {
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 16px;
   min-height: 112px;
   display: grid;
@@ -390,6 +394,7 @@ button:disabled {
 
 .stat-card strong {
   font-size: 2rem;
+  letter-spacing: 0;
 }
 
 .stat-card small {
@@ -424,7 +429,7 @@ button:disabled {
 .project-button {
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--surface);
   padding: 14px;
   text-align: left;
@@ -435,7 +440,8 @@ button:disabled {
 
 .project-button.active {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(35, 106, 91, 0.11);
+  background: linear-gradient(180deg, #ffffff, #f3f7ff);
+  box-shadow: 0 0 0 3px rgba(51, 92, 187, 0.11);
 }
 
 .project-row {
@@ -459,7 +465,7 @@ button:disabled {
 .progress span {
   display: block;
   height: 100%;
-  background: var(--primary);
+  background: linear-gradient(90deg, var(--primary), var(--blue));
   border-radius: inherit;
 }
 
@@ -474,7 +480,7 @@ button:disabled {
   font-size: 0.78rem;
   font-weight: 850;
   color: #425063;
-  background: #f7f8f4;
+  background: #f8fafc;
   white-space: nowrap;
 }
 
@@ -529,9 +535,10 @@ button:disabled {
 .panel {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 18px;
   margin-bottom: 20px;
+  box-shadow: 0 12px 28px rgba(23, 32, 51, 0.06);
 }
 
 .split {
@@ -549,7 +556,7 @@ button:disabled {
 .task-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 15px;
   display: grid;
   gap: 12px;
@@ -623,7 +630,7 @@ button:disabled {
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 5px 8px 5px 10px;
-  background: #f8faf6;
+  background: #f8fafc;
   max-width: 100%;
 }
 
@@ -652,17 +659,17 @@ button:disabled {
 .toolbar select {
   min-width: 170px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--surface);
   padding: 10px 12px;
 }
 
 .empty {
   border: 1px dashed #c9d1c8;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 24px;
   color: var(--muted);
-  background: #fbfcf8;
+  background: #f8fafc;
   text-align: center;
 }
 
@@ -673,8 +680,8 @@ button:disabled {
   transform: translateX(-50%) translateY(20px);
   max-width: min(520px, calc(100vw - 28px));
   padding: 12px 14px;
-  border-radius: 8px;
-  background: #1f2933;
+  border-radius: 6px;
+  background: #172033;
   color: #fff;
   box-shadow: var(--shadow);
   opacity: 0;
