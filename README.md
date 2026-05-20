@@ -4,8 +4,8 @@ A full-stack task management app for teams. Users can sign up, log in, create pr
 
 ## Submission Links
 
-- Live Application URL: https://team-task-manager-production-e539.up.railway.app
-- GitHub Repository: https://github.com/PSNarang4/Team-Task-Manager--Ethara.AI.git
+- Live Application URL: Add the Railway deployment URL after deploy
+- GitHub Repository: https://github.com/abhinav1590k/etharaai.git
 
 ## Features
 
@@ -94,7 +94,7 @@ npm run smoke   # run API smoke test
 
 ## Submission Checklist
 
-- Live Application URL: https://team-task-manager-production-e539.up.railway.app
-- GitHub Repository Link: https://github.com/PSNarang4/Team-Task-Manager--Ethara.AI.git
+- Live Application URL: Add the Railway deployment URL after deploy
+- GitHub Repository Link: https://github.com/abhinav1590k/etharaai.git
 - README file: use `README.txt` for upload.
 - Demo video: record login, project creation, team assignment, task assignment, member status update, and dashboard.
