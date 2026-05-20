@@ -2,6 +2,10 @@ Team Task Manager
 
 A full-stack task management app for teams. Users can sign up, log in, create projects, add team members, assign tasks, and track progress from a dashboard. The first registered account is automatically created as ADMIN; every later signup starts as MEMBER.
 
+Submission Links
+- Live Application URL: https://team-task-manager-production-e539.up.railway.app
+- GitHub Repository: https://github.com/PSNarang4/Team-Task-Manager--Ethara.AI.git
+
 Features
 - JWT authentication with signup and login
 - Admin/Member role-based access control
@@ -73,7 +77,7 @@ Role Rules
 - Members can update the status of tasks assigned to them.
 
 Submission Checklist
-- Live Application URL: add the Railway URL after deployment.
-- GitHub Repository Link: add the repo URL after pushing.
+- Live Application URL: https://team-task-manager-production-e539.up.railway.app
+- GitHub Repository Link: https://github.com/PSNarang4/Team-Task-Manager--Ethara.AI.git
 - README file: upload this README.txt file.
 - Demo video: record login, project creation, team assignment, task assignment, member status update, and dashboard.
